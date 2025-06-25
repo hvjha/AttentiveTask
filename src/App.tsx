@@ -26,7 +26,7 @@ const AppContent = () => {
               Create Task
             </Button>
 
-            {/* Add spacing below the button before Filter */}
+            
             <Filter />
           </Box>
         )}
@@ -52,7 +52,6 @@ const App = () => {
 
   return (
     <ThemeProvider theme={theme}>
-      {/* CssBaseline applies global styles for dark/light */}
       <CssBaseline />
       <Router>
         <AppContent />
@@ -61,5 +60,4 @@ const App = () => {
     </ThemeProvider>
   );
 };
-
 export default App;

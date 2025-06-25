@@ -8,7 +8,6 @@ const Filter = () => {
   const setFilterTaskName = useTodoStore((state) => state.setFilterTaskName);
   const setFilterAssignee = useTodoStore((state) => state.setFilterAssignee);
 
-  // Local state to control inputs for better UX (optional)
   const [taskName, setTaskName] = useState(filterTaskName);
   const [assignee, setAssignee] = useState(filterAssignee);
 
