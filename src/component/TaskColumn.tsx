@@ -23,7 +23,7 @@ const TaskColumn = ({ status }: { status: TaskStatus }) => {
   });
 
   const handleDragOver = (e: React.DragEvent<HTMLDivElement>) => {
-    e.preventDefault(); // necessary to allow drop
+    e.preventDefault(); 
   };
 
   const handleDrop = (e: React.DragEvent<HTMLDivElement>) => {

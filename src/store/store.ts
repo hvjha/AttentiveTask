@@ -32,6 +32,9 @@ interface TodoState {
   deleteTask: (id: string) => void;
   addDeletedTask: (task: Todo) => void;
   updateTask: (updatedTask: Todo) => void;
+
+  darkMode:boolean;
+  toggleDarkMode:()=>void;
 }
 
 const useTodoStore = create<TodoState>()(
@@ -102,6 +105,8 @@ const useTodoStore = create<TodoState>()(
               t.id === updatedTask.id ? updatedTask : t
             ),
           })),
+          darkMode: false,
+        toggleDarkMode: () => set((state) => ({ darkMode: !state.darkMode })),
       }),
       {
         name: "todo-storage",
